@@ -1,0 +1,8 @@
+{
+  "name": "单文件 bugfix",
+  "visibleMode": "agent",
+  "goal": "修复 src/components/ChatPanel.vue 中一个按钮文案错误",
+  "files": ["src/components/ChatPanel.vue"],
+  "risk": "safe",
+  "expectedStrategy": "single-agent"
+}

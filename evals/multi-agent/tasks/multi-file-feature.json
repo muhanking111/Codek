@@ -1,0 +1,12 @@
+{
+  "name": "多文件功能新增",
+  "visibleMode": "agent",
+  "goal": "新增设置项端到端接入，修改 frontend/src/App.vue、frontend/src/components/SettingsPanel.vue、desktop/services/settings/index.js，并运行 typecheck",
+  "files": [
+    "frontend/src/App.vue",
+    "frontend/src/components/SettingsPanel.vue",
+    "desktop/services/settings/index.js"
+  ],
+  "risk": "medium",
+  "expectedStrategy": "multi-agent"
+}

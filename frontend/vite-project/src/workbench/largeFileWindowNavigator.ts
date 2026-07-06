@@ -1,0 +1,30 @@
+export {
+  createLargeFileWindowTransitionRunner,
+  decideLargeFileWindowNavigation,
+  decideLargeFileWindowNavigationGuard,
+  installLargeFileWindowAutoNavigation,
+  LARGE_FILE_WINDOW_NAVIGATION_THROTTLE_MS,
+  LARGE_FILE_WINDOW_PRELOAD_MIN_PX,
+  LARGE_FILE_WINDOW_PRELOAD_VIEWPORT_RATIO,
+  resolveLargeFileWindowScrollTop,
+} from "../vscode-adapter/editor/browser/services/largeFileWindowNavigator"
+
+export type {
+  LargeFileWindowAutoNavigationDisposable,
+  LargeFileWindowAutoNavigationEditor,
+  LargeFileWindowAutoNavigationElement,
+  LargeFileWindowAutoNavigationOptions,
+  LargeFileWindowAutoNavigationRequest,
+  LargeFileScrollSnapshot,
+  LargeFileWindowWheelEvent,
+  LargeFileWindowDirection,
+  LargeFileWindowNavigationDecision,
+  LargeFileWindowNavigationGuard,
+  LargeFileWindowNavigationGuardDecision,
+  LargeFileWindowNavigationControllerLike,
+  LargeFileWindowLoadOptions,
+  LargeFileWindowScrollAnchorInput,
+  LargeFileWindowState,
+  LargeFileWindowTransitionRunner,
+  LargeFileWindowTransitionRunnerOptions,
+} from "../vscode-adapter/editor/browser/services/largeFileWindowNavigator"

@@ -1,0 +1,12 @@
+{
+  "name": "跨模块重构",
+  "visibleMode": "auto",
+  "goal": "重构前端 composer、桌面端 router 和测试，完成后运行 build 和 typecheck",
+  "files": [
+    "frontend/src/components/ChatPanel.vue",
+    "frontend/src/agent/executionStrategy.ts",
+    "desktop/services/agentLoop/orchestrator.js"
+  ],
+  "risk": "medium",
+  "expectedStrategy": "multi-agent"
+}

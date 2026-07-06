@@ -1,0 +1,8 @@
+{
+  "name": "测试失败自修",
+  "visibleMode": "agent",
+  "goal": "定位失败测试，修复实现并重新运行 npm run test 和 npm run typecheck",
+  "files": [],
+  "risk": "medium",
+  "expectedStrategy": "multi-agent"
+}

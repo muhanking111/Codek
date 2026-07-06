@@ -1,0 +1,100 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Codek product architecture</title>
+  <desc id="desc">Codek desktop architecture diagram showing workbench UI, agent orchestration, safety gates, runtime tools, and local project evidence.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1200" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="0.52" stop-color="#111827"/>
+      <stop offset="1" stop-color="#042F2E"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="188" y1="166" x2="1088" y2="646" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+    <filter id="shadow" x="42" y="36" width="1196" height="688" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="24"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.02 0 0 0 0 0.03 0 0 0 0 0.06 0 0 0 0.42 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect" result="shape"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38BDF8"/>
+    </marker>
+    <style>
+      .title { font: 700 34px "Segoe UI", Arial, sans-serif; fill: #F8FAFC; }
+      .sub { font: 500 16px "Segoe UI", Arial, sans-serif; fill: #94A3B8; }
+      .h { font: 700 18px "Segoe UI", Arial, sans-serif; fill: #F8FAFC; }
+      .p { font: 500 14px "Segoe UI", Arial, sans-serif; fill: #CBD5E1; }
+      .small { font: 500 12px "Segoe UI", Arial, sans-serif; fill: #94A3B8; }
+      .chip { font: 700 12px "Segoe UI", Arial, sans-serif; fill: #A7F3D0; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="760" rx="34" fill="#08111F"/>
+  <g filter="url(#shadow)">
+    <rect x="72" y="60" width="1136" height="640" rx="30" fill="url(#bg)" stroke="#263244"/>
+  </g>
+  <text x="122" y="126" class="title">Codek 产品结构图</text>
+  <text x="122" y="158" class="sub">一个本地桌面工作台，把编辑器、Agent、工具执行、安全审批和交付证据连接起来。</text>
+  <rect x="930" y="106" width="198" height="34" rx="17" fill="#064E3B" stroke="#14B8A6"/>
+  <text x="954" y="128" class="chip">Local-first by default</text>
+
+  <rect x="118" y="210" width="232" height="168" rx="20" fill="#101827" stroke="#334155"/>
+  <text x="146" y="248" class="h">Workbench UI</text>
+  <text x="146" y="284" class="p">Vue / Monaco / xterm</text>
+  <text x="146" y="312" class="small">文件树、搜索、编辑器、终端</text>
+  <text x="146" y="338" class="small">设置、任务状态、交付面板</text>
+
+  <rect x="404" y="210" width="232" height="168" rx="20" fill="#101827" stroke="#334155"/>
+  <text x="432" y="248" class="h">Agent Orchestrator</text>
+  <text x="432" y="284" class="p">Ask / Plan / Agent / Auto</text>
+  <text x="432" y="312" class="small">任务拆解、上下文读取</text>
+  <text x="432" y="338" class="small">补丁草案、artifact、报告</text>
+
+  <rect x="690" y="210" width="232" height="168" rx="20" fill="#101827" stroke="#334155"/>
+  <text x="718" y="248" class="h">Safety Gates</text>
+  <text x="718" y="284" class="p">Trust / Approval / Redaction</text>
+  <text x="718" y="312" class="small">文件写入审批、命令授权</text>
+  <text x="718" y="338" class="small">敏感内容脱敏、回滚建议</text>
+
+  <rect x="976" y="210" width="184" height="168" rx="20" fill="#101827" stroke="#334155"/>
+  <text x="1004" y="248" class="h">Model Layer</text>
+  <text x="1004" y="284" class="p">Provider adapter</text>
+  <text x="1004" y="312" class="small">模型调用边界</text>
+  <text x="1004" y="338" class="small">本地凭据优先</text>
+
+  <rect x="118" y="468" width="232" height="138" rx="20" fill="#0B1120" stroke="#334155"/>
+  <text x="146" y="506" class="h">Local Workspace</text>
+  <text x="146" y="542" class="small">真实项目文件、Git 状态</text>
+  <text x="146" y="568" class="small">本地缓存、工作区信任状态</text>
+
+  <rect x="404" y="468" width="232" height="138" rx="20" fill="#0B1120" stroke="#334155"/>
+  <text x="432" y="506" class="h">Runtime Tools</text>
+  <text x="432" y="542" class="small">Shell、测试、构建、smoke</text>
+  <text x="432" y="568" class="small">扩展宿主、文件操作、搜索</text>
+
+  <rect x="690" y="468" width="232" height="138" rx="20" fill="#0B1120" stroke="#334155"/>
+  <text x="718" y="506" class="h">Evidence Store</text>
+  <text x="718" y="542" class="small">计划、diff、命令输出</text>
+  <text x="718" y="568" class="small">验证结果、风险、交付摘要</text>
+
+  <rect x="976" y="468" width="184" height="138" rx="20" fill="#0B1120" stroke="#334155"/>
+  <text x="1004" y="506" class="h">Release Checks</text>
+  <text x="1004" y="542" class="small">源码边界、打包边界</text>
+  <text x="1004" y="568" class="small">候选发布检查</text>
+
+  <path d="M350 294H394" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M636 294H680" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M922 294H966" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M520 378V456" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M806 378V456" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M236 468V390C236 386 239 382 243 382H470" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M922 536H966" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M636 536H680" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="286" y="650" width="708" height="16" rx="8" fill="url(#teal)" opacity="0.65"/>
+</svg>

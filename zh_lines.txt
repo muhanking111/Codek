@@ -1,0 +1,107 @@
+﻿94: title="插件市场"
+173: title="远程连接"
+465: :title="isDirty(path) ? '关闭 (未保存)' : '关闭'"
+472: <span v-if="pinnedTabs.has(path)" class="tab-pin-icon" title="已固定">📌</span>
+641: <!-- Tab 右键菜单 -->
+644: <button class="tab-ctx-item" @click="handleCloseTab(tabContextMenu.path)">关闭</button>
+645: <button class="tab-ctx-item" @click="closeOtherTabs(tabContextMenu.path)">关闭其他</button>
+646: <button class="tab-ctx-item" @click="closeRightTabs(tabContextMenu.path)">关闭右侧</button>
+647: <button class="tab-ctx-item" @click="closeAllSavedTabs()">关闭已保存</button>
+650: {{ pinnedTabs.has(tabContextMenu.path) ? '取消固定' : '固定标签' }}
+656: <!-- 未保存确认弹窗 -->
+659: <div class="name-dialog-title">文件未保存</div>
+660: <div class="unsaved-dialog-body">「{{ basename(unsavedDialog.path) }}」已修改，是否保存？</div>
+662: <button class="name-dialog-btn ghost" @click="unsavedDialog.resolve?.('discard')">不保存</button>
+663: <button class="name-dialog-btn ghost" @click="unsavedDialog.resolve?.('cancel')">取消</button>
+664: <button class="name-dialog-btn primary" @click="unsavedDialog.resolve?.('save')">保存</button>
+669: <!-- 跳转到行号弹窗 -->
+672: <div class="name-dialog-title">跳转到行</div>
+679: placeholder="输入行号..."
+684: <button class="name-dialog-btn ghost" @click="gotoLineVisible = false">取消</button>
+685: <button class="name-dialog-btn primary" @click="submitGotoLine">跳转</button>
+690: <!-- Ctrl+Tab 文件切换器 -->
+693: <div class="file-switcher-title">切换文件</div>
+741: <button class="status-item status-clickable" :title="ollamaOk ? 'AI 已连接' : 'AI 未连接'" @click="activeView = 'settings'">
+745: <button class="status-item status-clickable" :title="lspStatus.connected ? `LSP: ${lspStatus.name}` : 'LSP 未运行'">
+753: <button class="status-item status-clickable" :title="'切换文件语言'" @click="showLanguagePicker = !showLanguagePicker">
+756: <span v-if="isLargeFile" class="status-pill large-file" title="大文件模式已启用">LFS</span>
+767: <span v-if="isLargeFile" class="status-pill large-file" title="大文件模式已启用">LFS</span>
+782: <button v-if="collabEnabled" class="status-item status-clickable" :title="collabConnected ? '协作已连接' : '协作未连接'" @click="toggleCollab">
+791: <button v-else class="status-item status-clickable" title="开启协作模式" @click="toggleCollab">
+810: placeholder="选择语言模式..."
+1143: // Tab 管理相关
+1150: // 跳转到行号
+1155: // 文件切换器
+1213: remote: "远程连接",
+1215: marketplace: "插件市场",
+1503: { id: "save", label: "保存文件", category: "File", shortcut: "Ctrl+S", action: () => { void handleSave() } },
+1504: { id: "saveAll", label: "保存所有文件", category: "File", shortcut: "Ctrl+Shift+S", action: () => { void handleSave() } },
+1505: { id: "formatDocument", label: "格式化文档", category: "Edit", shortcut: "Shift+Alt+F", action: () => { editor?.trigger("keyboard", "editor.action.formatDocument", null) } },
+1506: { id: "organizeImports", label: "组织导入", category: "Edit", shortcut: "Shift+Alt+O", action: () => { editor?.trigger("keyboard", "editor.action.organizeImports", null) } },
+1507: { id: "globalSearch", label: "全局搜索", category: "Navigation", shortcut: "Ctrl+Shift+F", action: () => { activeView.value = "search" } },
+1508: { id: "goToDefinition", label: "转到定义", category: "Navigation", shortcut: "F12", action: () => { editor?.trigger("keyboard", "editor.action.revealDefinition", null) } },
+1509: { id: "commandPalette", label: "命令面板", category: "View", shortcut: "Ctrl+Shift+P", action: () => { commandPaletteRef.value?.open() } },
+1510: { id: "closeTab", label: "关闭当前标签", category: "File", shortcut: "Ctrl+W", action: () => { if (w.activeFile) handleCloseTab(w.activeFile) } },
+1511: { id: "closeOtherTabs", label: "关闭其他标签", category: "File", action: () => { if (w.activeFile) closeOtherTabs(w.activeFile) } },
+1512: { id: "closeAllSavedTabs", label: "关闭已保存标签", category: "File", action: () => { closeAllSavedTabs() } },
+1513: { id: "gotoLine", label: "跳转到行", category: "Navigation", shortcut: "Ctrl+G", action: () => { openGotoLine() } },
+1514: { id: "fileSwitcher", label: "切换文件", category: "Navigation", shortcut: "Ctrl+Tab", action: () => { openFileSwitcher() } },
+1515: { id: "toggleMinimap", label: "切换 Minimap", category: "View", shortcut: "Ctrl+Shift+M", action: () => { toggleMinimap() } },
+1516: { id: "toggleTerminal", label: "切换终端", category: "View", shortcut: "Ctrl+`", action: () => { terminalOpen.value = !terminalOpen.value } },
+1517: { id: "toggleGitPanel", label: "切换 Git 面板", category: "Git", action: () => { activeView.value = activeView.value === "changes" ? "files" : "changes" } },
+1518: { id: "toggleCollab", label: "切换协作模式", category: "View", action: () => { toggleCollab() } },
+1519: { id: "openRemote", label: "打开远程连接", category: "View", action: () => { activeView.value = "remote" } },
+1520: { id: "openDocker", label: "打开 Docker 面板", category: "View", action: () => { activeView.value = "docker" } },
+1521: { id: "openOutput", label: "打开输出面板", category: "View", action: () => { outputPanelOpen.value = !outputPanelOpen.value } },
+1522: { id: "toggleLargeFile", label: "切换大文件模式", category: "View", action: () => { isLargeFile.value = !isLargeFile.value } },
+1523: { id: "findReferences", label: "查找引用", category: "Navigation", shortcut: "Shift+F12", action: () => { editor?.trigger("keyboard", "editor.action.goToReferences", null) } },
+1524: { id: "renameSymbol", label: "重命名符号", category: "Edit", shortcut: "F2", action: () => { editor?.trigger("keyboard", "editor.action.rename", null) } },
+1525: { id: "toggleComment", label: "注释行", category: "Edit", shortcut: "Ctrl+/", action: () => { editor?.trigger("keyboard", "editor.action.commentLine", null) } },
+1526: { id: "quickOpen", label: "快速打开文件", category: "Navigation", shortcut: "Ctrl+P", action: () => { activeView.value = "files" } },
+1527: { id: "toggleSidebar", label: "切换侧边栏", category: "View", action: () => { activeView.value = activeView.value === "files" ? "" : "files" } },
+1528: { id: "gitCommit", label: "Git 提交", category: "Git", action: () => { activeView.value = "changes" } },
+1529: { id: "gitPush", label: "Git 推送", category: "Git", action: () => { activeView.value = "changes" } },
+1530: { id: "gitPull", label: "Git 拉取", category: "Git", action: () => { activeView.value = "changes" } },
+1531: { id: "startDebug", label: "开始调试", category: "Debug", shortcut: "F5", action: () => { debugVisible.value = true } },
+1532: { id: "stopDebug", label: "停止调试", category: "Debug", shortcut: "Shift+F5", action: () => { debugVisible.value = false } },
+1533: { id: "toggleBreakpoint", label: "切换断点", category: "Debug", shortcut: "F9", action: () => { editor?.trigger("keyboard", "editor.debug.action.toggleBreakpoint", null) } },
+1534: { id: "aiChat", label: "AI 对话", category: "AI", shortcut: "Ctrl+K", action: () => { chatOpen.value = !chatOpen.value } },
+1535: { id: "aiInlineEdit", label: "AI 内联编辑", category: "AI", action: () => { if (editor) openInlineEdit() } },
+1584: { id: "undo", label: "撤销", shortcut: "Ctrl+Z", action: (ed) => ed.trigger("contextMenu", "undo", null), enabled: ctx.canUndo },
+1585: { id: "redo", label: "重做", shortcut: "Ctrl+Y", action: (ed) => ed.trigger("contextMenu", "redo", null), enabled: ctx.canRedo },
+1587: { id: "cut", label: "剪切", shortcut: "Ctrl+X", action: (ed) => ed.trigger("contextMenu", "editor.action.clipboardCutAction", null), enabled: ctx.hasSelection },
+1588: { id: "copy", label: "复制", shortcut: "Ctrl+C", action: (ed) => ed.trigger("contextMenu", "editor.action.clipboardCopyAction", null), enabled: ctx.hasSelection },
+1589: { id: "paste", label: "粘贴", shortcut: "Ctrl+V", action: (ed) => ed.trigger("contextMenu", "editor.action.clipboardPasteAction", null) },
+1590: { id: "selectAll", label: "全选", shortcut: "Ctrl+A", action: (ed) => ed.trigger("contextMenu", "editor.action.selectAll", null) },
+1592: { id: "format", label: "格式化文档", shortcut: "Shift+Alt+F", action: (ed) => ed.trigger("contextMenu", "editor.action.formatDocument", null) },
+1594: { id: "goToDefinition", label: "转到定义", shortcut: "F12", action: (ed) => ed.trigger("contextMenu", "editor.action.revealDefinition", null) },
+1595: { id: "findReferences", label: "查找引用", shortcut: "Shift+F12", action: (ed) => ed.trigger("contextMenu", "editor.action.goToReferences", null) },
+1596: { id: "rename", label: "重命名符号", shortcut: "F2", action: (ed) => ed.trigger("contextMenu", "editor.action.rename", null) },
+1598: { id: "commentLine", label: "注释行", shortcut: "Ctrl+/", action: (ed) => ed.trigger("contextMenu", "editor.action.commentLine", null) },
+1600: { id: "commandPalette", label: "命令面板", shortcut: "Ctrl+Shift+P", action: () => { commandPaletteRef.value?.open() } },
+2059: // --- 滚动条标记 (错误/警告/修改位置) ---
+2078: // --- Tab 路径消歧 ---
+2092: // --- Tab 关闭 + 未保存确认 ---
+2121: // --- Tab 右键菜单 ---
+2171: // --- Tab 拖拽排序 ---
+2207: // --- 跳转到行号 ---
+2226: // --- Ctrl+Tab 文件切换器 ---
+2475: if (!confirm(`确定要删除 "${path}" 吗？`)) return
+2777: description: "发送选区到 Chat",
+2900: description: "放大字体",
+2910: description: "缩小字体",
+2920: description: "重置字体大小",
+2930: description: "关闭当前标签",
+2940: description: "跳转到行号",
+2950: description: "切换文件",
+3272: const CONTINUE_RE = /^\s*(继续|接着|接着做|接着上次|继续完成|继续做|不要停|go on|keep going|continue|resume|carry on|proceed)([\s。.!！?？]|$)/i
+3290: payload = `（用户希望接着上次被中断的任务继续完成，请从中断处继续，不要重头开始）\n${text}`
+3304: lastMsg.content = (lastMsg.content || '') + '\n\n_[已中断 — 输入"继续"可接着完成]_'
+3308: content: '_[已中断 — 输入"继续"可接着完成]_',
+4411: /* --- Tab 关闭按钮 --- */
+4455: /* --- Tab 右键菜单 --- */
+4497: /* --- 未保存确认弹窗 --- */
+4505: /* --- 跳转到行号 --- */
+4510: /* --- 语言选择器 --- */
+4573: /* --- Ctrl+Tab 文件切换器 --- */
+4634: /* --- 编辑器 Glyph 图标 (行内错误/警告标记) --- */

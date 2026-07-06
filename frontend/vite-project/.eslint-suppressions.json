@@ -1,0 +1,369 @@
+{
+  "src/App.vue": {
+    "@typescript-eslint/ban-ts-comment": {
+      "count": 1
+    },
+    "@typescript-eslint/no-explicit-any": {
+      "count": 1
+    },
+    "@typescript-eslint/no-unused-expressions": {
+      "count": 1
+    },
+    "@typescript-eslint/no-unused-vars": {
+      "count": 16
+    },
+    "no-extra-boolean-cast": {
+      "count": 15
+    },
+    "no-undef": {
+      "count": 2
+    }
+  },
+  "src/agent/agents/ultimateAgent.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  },
+  "src/agent/goalManager.ts": {
+    "no-empty": {
+      "count": 2
+    }
+  },
+  "src/agent/tools.js": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  },
+  "src/agent/tools.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 2
+    }
+  },
+  "src/ai/ansi.ts": {
+    "no-control-regex": {
+      "count": 1
+    }
+  },
+  "src/ai/chunker.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  },
+  "src/ai/diffApply.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  },
+  "src/ai/editProvider.js": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  },
+  "src/ai/inlineCompletionProvider.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 2
+    },
+    "no-empty": {
+      "count": 1
+    }
+  },
+  "src/ai/mentions.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 10
+    }
+  },
+  "src/ai/webSearch.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 3
+    }
+  },
+  "src/automation/automationManager.ts": {
+    "prefer-const": {
+      "count": 1
+    }
+  },
+  "src/components/AgentPanel.vue": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 6
+    }
+  },
+  "src/components/AutomationPanel.vue": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 3
+    }
+  },
+  "src/components/ChatPanel.vue": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 2
+    }
+  },
+  "src/components/ExtensionDetails.vue": {
+    "no-useless-escape": {
+      "count": 1
+    }
+  },
+  "src/components/FileTree.vue": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 2
+    }
+  },
+  "src/components/SandboxModeBar.test.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 1
+    }
+  },
+  "src/components/SettingsPanel.test.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 2
+    }
+  },
+  "src/components/SettingsPanel.vue": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 20
+    },
+    "no-empty": {
+      "count": 3
+    }
+  },
+  "src/components/TaskProgressBar.vue": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  },
+  "src/components/TerminalPanel.vue": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    },
+    "no-control-regex": {
+      "count": 1
+    }
+  },
+  "src/components/VoiceInput.vue": {
+    "no-empty": {
+      "count": 4
+    },
+    "no-undef": {
+      "count": 7
+    }
+  },
+  "src/debug/adapterConfigs.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  },
+  "src/debug/dapManager.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  },
+  "src/editor/inlineDiffOverlay.ts": {
+    "@typescript-eslint/ban-ts-comment": {
+      "count": 1
+    }
+  },
+  "src/explorer/tree/CodekAsyncDataTree.ts": {
+    "@typescript-eslint/no-this-alias": {
+      "count": 1
+    }
+  },
+  "src/explorer/tree/CodekListView.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 4
+    }
+  },
+  "src/explorer/tree/ExplorerTreeHost.test.ts": {
+    "prefer-const": {
+      "count": 4
+    }
+  },
+  "src/ext-host/monacoBridge.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 2
+    },
+    "no-empty": {
+      "count": 2
+    },
+    "prefer-const": {
+      "count": 1
+    }
+  },
+  "src/extensions/configurationDefaults.test.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 2
+    }
+  },
+  "src/extensions/ehClient.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 8
+    },
+    "no-empty": {
+      "count": 2
+    }
+  },
+  "src/extensions/iconThemes.test.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  },
+  "src/extensions/workbenchContributions.test.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 3
+    }
+  },
+  "src/extensions/workbenchContributions.ts": {
+    "@typescript-eslint/no-empty-object-type": {
+      "count": 1
+    }
+  },
+  "src/languages/lsp/adapters.ts": {
+    "@typescript-eslint/ban-ts-comment": {
+      "count": 1
+    }
+  },
+  "src/languages/lsp/client.ts": {
+    "@typescript-eslint/ban-ts-comment": {
+      "count": 1
+    }
+  },
+  "src/languages/lsp/manager.ts": {
+    "@typescript-eslint/ban-ts-comment": {
+      "count": 1
+    }
+  },
+  "src/languages/lsp/serverConfigs.ts": {
+    "@typescript-eslint/ban-ts-comment": {
+      "count": 1
+    }
+  },
+  "src/languages/lspClient.ts": {
+    "@typescript-eslint/ban-ts-comment": {
+      "count": 1
+    },
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    },
+    "prefer-const": {
+      "count": 1
+    }
+  },
+  "src/languages/refactor/refactorProvider.ts": {
+    "@typescript-eslint/ban-ts-comment": {
+      "count": 1
+    }
+  },
+  "src/lib/api.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 4
+    }
+  },
+  "src/scm/scmEditorDecorations.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 8
+    }
+  },
+  "src/settings/profileStore.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 2
+    }
+  },
+  "src/smoke/explorerPerformanceSmoke.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  },
+  "src/workbench/agentEventBridge.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 12
+    }
+  },
+  "src/workbench/contextKeys.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  },
+  "src/workbench/editorContextMenuLifecycle.test.ts": {
+    "@typescript-eslint/no-unsafe-function-type": {
+      "count": 1
+    }
+  },
+  "src/workbench/editorDiagnosticsLifecycle.test.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 2
+    }
+  },
+  "src/workbench/editorDiagnosticsLifecycle.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 10
+    }
+  },
+  "src/workbench/editorGroupLayoutPersistence.test.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 1
+    }
+  },
+  "src/workbench/editorGroupPersistence.test.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 1
+    }
+  },
+  "src/workbench/editorGroupPersistence.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 1
+    }
+  },
+  "src/workbench/editorModelLifecycle.test.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 6
+    }
+  },
+  "src/workbench/editorModelLifecycle.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 3
+    }
+  },
+  "src/workbench/editorPreferenceActions.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 2
+    }
+  },
+  "src/workbench/goalResultActions.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 5
+    }
+  },
+  "src/workbench/inlineEditActions.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 3
+    }
+  },
+  "src/workbench/searchFileActions.test.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 2
+    }
+  },
+  "src/workbench/splitEditorLifecycle.test.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 4
+    }
+  },
+  "src/workbench/splitEditorLifecycle.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 12
+    }
+  },
+  "src/workbench/workbenchResourceLifecycle.test.ts": {
+    "@typescript-eslint/no-explicit-any": {
+      "count": 4
+    }
+  },
+  "src/workspace/largeFilePolicy.test.ts": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  },
+  "src/workspace/manager.js": {
+    "@typescript-eslint/no-unused-vars": {
+      "count": 1
+    }
+  }
+}

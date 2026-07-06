@@ -1,0 +1,9 @@
+{
+  "name": "冲突 fixture",
+  "visibleMode": "agent",
+  "goal": "在临时 fixture 中模拟两个实现分支同时修改 demo.js，验证冲突进入报告",
+  "files": ["demo.js"],
+  "risk": "medium",
+  "fixtureType": "conflict",
+  "expectedStrategy": "single-agent"
+}

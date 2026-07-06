@@ -1,0 +1,34 @@
+;; Codek macOS Seatbelt profile.
+;; The `{{PROJECT_ROOT}}` and `{{NETWORK_RULE}}` tokens are replaced by macos.js
+;; at runtime — never edit the generated profile by hand.
+
+(version 1)
+(deny default)
+
+;; System read-only access — needed for /bin/sh and most CLI tools to load.
+(allow file-read* (subpath "/usr"))
+(allow file-read* (subpath "/bin"))
+(allow file-read* (subpath "/sbin"))
+(allow file-read* (subpath "/System"))
+(allow file-read* (subpath "/Library"))
+(allow file-read* (subpath "/private/etc"))
+(allow file-read* (subpath "/private/var/db/dyld"))
+(allow file-read-metadata)
+
+;; Project root — the only writable area inside the sandbox.
+(allow file-read*  (subpath "{{PROJECT_ROOT}}"))
+(allow file-write* (subpath "{{PROJECT_ROOT}}"))
+(allow file-ioctl  (subpath "{{PROJECT_ROOT}}"))
+
+;; Required machinery.
+(allow process-fork)
+(allow process-exec)
+(allow signal (target self))
+(allow sysctl-read)
+
+;; Network — replaced with either `(deny network*)` or `(allow network*)`.
+{{NETWORK_RULE}}
+
+;; Deny inter-process channels by default.
+(deny ipc-posix*)
+(deny mach-lookup (with no-report))

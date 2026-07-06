@@ -1,0 +1,169 @@
+{
+  "src": "d:\\SourceMirror\\vscode\\extensions",
+  "dst": "D:\\Workspace\\extensions",
+  "dry": true,
+  "copied": [],
+  "skipped": [
+    {
+      "name": ".npmrc",
+      "reason": "not-a-directory"
+    },
+    {
+      "name": "cgmanifest.json",
+      "reason": "non-extension-file"
+    },
+    {
+      "name": "codek-chat",
+      "reason": "skip-list"
+    },
+    {
+      "name": "CONTRIBUTING.md",
+      "reason": "non-extension-file"
+    },
+    {
+      "name": "copilot",
+      "reason": "skip-list"
+    },
+    {
+      "name": "esbuild-common.mts",
+      "reason": "non-extension-file"
+    },
+    {
+      "name": "esbuild-extension-common.mts",
+      "reason": "non-extension-file"
+    },
+    {
+      "name": "esbuild-webview-common.mts",
+      "reason": "non-extension-file"
+    },
+    {
+      "name": "node_modules",
+      "reason": "skip-list"
+    },
+    {
+      "name": "out",
+      "reason": "skip-list"
+    },
+    {
+      "name": "package-lock.json",
+      "reason": "non-extension-file"
+    },
+    {
+      "name": "package.json",
+      "reason": "non-extension-file"
+    },
+    {
+      "name": "postinstall.mjs",
+      "reason": "non-extension-file"
+    },
+    {
+      "name": "tsconfig.base.json",
+      "reason": "non-extension-file"
+    },
+    {
+      "name": "tsconfig.tsbuildinfo",
+      "reason": "non-extension-file"
+    },
+    {
+      "name": "types",
+      "reason": "skip-list"
+    }
+  ],
+  "alreadyPresent": [
+    "bat",
+    "clojure",
+    "coffeescript",
+    "configuration-editing",
+    "cpp",
+    "csharp",
+    "css",
+    "css-language-features",
+    "dart",
+    "debug-auto-launch",
+    "debug-server-ready",
+    "diff",
+    "docker",
+    "dotenv",
+    "emmet",
+    "extension-editing",
+    "fsharp",
+    "git",
+    "git-base",
+    "github",
+    "github-authentication",
+    "go",
+    "groovy",
+    "grunt",
+    "gulp",
+    "handlebars",
+    "hlsl",
+    "html",
+    "html-language-features",
+    "ini",
+    "ipynb",
+    "jake",
+    "java",
+    "javascript",
+    "json",
+    "json-language-features",
+    "julia",
+    "latex",
+    "less",
+    "log",
+    "lua",
+    "make",
+    "markdown-basics",
+    "markdown-language-features",
+    "markdown-math",
+    "media-preview",
+    "merge-conflict",
+    "mermaid-markdown-features",
+    "microsoft-authentication",
+    "notebook-renderers",
+    "npm",
+    "objective-c",
+    "perl",
+    "php",
+    "php-language-features",
+    "powershell",
+    "prompt-basics",
+    "pug",
+    "python",
+    "r",
+    "razor",
+    "references-view",
+    "restructuredtext",
+    "ruby",
+    "rust",
+    "scss",
+    "search-result",
+    "shaderlab",
+    "shellscript",
+    "simple-browser",
+    "sql",
+    "swift",
+    "terminal-suggest",
+    "theme-abyss",
+    "theme-defaults",
+    "theme-kimbie-dark",
+    "theme-monokai",
+    "theme-monokai-dimmed",
+    "theme-quietlight",
+    "theme-red",
+    "theme-seti",
+    "theme-solarized-dark",
+    "theme-solarized-light",
+    "theme-tomorrow-night-blue",
+    "tunnel-forwarding",
+    "typescript-basics",
+    "typescript-language-features",
+    "vb",
+    "vscode-api-tests",
+    "vscode-colorize-perf-tests",
+    "vscode-colorize-tests",
+    "vscode-test-resolver",
+    "xml",
+    "yaml"
+  ],
+  "errors": []
+}

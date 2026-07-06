@@ -1,0 +1,7 @@
+{
+  "name": "codek-ext-host",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "extHost.bundle.mjs",
+  "dependencies": {}
+}

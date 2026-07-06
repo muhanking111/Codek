@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  overflow: hidden;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Inline diff overlay (Cursor-style AI change preview) */
+.inline-diff-added-line {
+  background: rgba(52, 211, 153, 0.12) !important;
+}
+
+.inline-diff-gutter-added {
+  background: rgba(52, 211, 153, 0.5) !important;
+  width: 3px !important;
+  margin-left: 3px;
+}
+
+.inline-diff-removed-zone {
+  background: rgba(248, 113, 113, 0.08);
+  border-left: 3px solid rgba(248, 113, 113, 0.55);
+  font-family: var(--editor-font, "JetBrains Mono", monospace);
+  font-size: 13px;
+  line-height: 18px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.inline-diff-removed-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  color: #fca5a5;
+  white-space: pre;
+  text-decoration: line-through;
+  text-decoration-color: rgba(248, 113, 113, 0.35);
+}
+
+.inline-diff-marker {
+  width: 12px;
+  color: #f87171;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.inline-diff-text {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inline-diff-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 10px;
+  background: rgba(45, 212, 191, 0.08);
+  border-top: 1px solid rgba(45, 212, 191, 0.25);
+  border-bottom: 1px solid rgba(45, 212, 191, 0.25);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 11px;
+}
+
+.inline-diff-label {
+  color: #2dd4bf;
+  font-weight: 600;
+  margin-right: auto;
+}
+
+.inline-diff-btn {
+  background: transparent;
+  border: 1px solid rgba(45, 212, 191, 0.4);
+  color: #d4d4d4;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 11px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.inline-diff-btn.accept {
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.45);
+}
+
+.inline-diff-btn.accept:hover {
+  background: rgba(52, 211, 153, 0.18);
+}
+
+.inline-diff-btn.reject {
+  color: #f87171;
+  border-color: rgba(248, 113, 113, 0.45);
+}
+
+.inline-diff-btn.reject:hover {
+  background: rgba(248, 113, 113, 0.18);
+}

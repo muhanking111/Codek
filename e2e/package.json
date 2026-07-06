@@ -1,0 +1,12 @@
+{
+  "name": "codek-e2e",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "electron": "^35.1.2"
+  }
+}

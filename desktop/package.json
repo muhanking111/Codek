@@ -1,0 +1,118 @@
+{
+  "name": "codek-desktop",
+  "version": "1.0.0",
+  "description": "Codek Desktop - AI-powered code editor",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-rebuild -f -w node-pty",
+    "rebuild": "electron-rebuild -f -w node-pty",
+    "test": "node --test services/security/__tests__/security.test.js",
+    "pack:win": "electron-builder --win",
+    "pack:mac": "electron-builder --mac",
+    "pack:linux": "electron-builder --linux",
+    "pack:all": "electron-builder --win --mac --linux"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "better-sqlite3": "^12.10.0",
+    "chokidar": "^4.0.3",
+    "electron-updater": "^6.3.9",
+    "jose": "^6.2.3",
+    "node-pty": "^1.0.0",
+    "simple-git": "^3.36.0",
+    "ssh2": "^1.16.0",
+    "undici": "^8.3.0",
+    "ws": "^8.20.1"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.0.4",
+    "electron": "^35.1.2",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.codek.app",
+    "productName": "Codek",
+    "copyright": "Copyright 漏 2026 Codek",
+    "electronDist": "node_modules/electron/dist",
+    "directories": {
+      "output": "release",
+      "buildResources": "assets"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "lifecycle.js",
+      "tray.js",
+      "frontend-dist/**",
+      "services/**",
+      "resources/**",
+      "!resources/jre/**",
+      "!resources/codek-backend.jar",
+      "node_modules/**"
+    ],
+    "extraResources": [],
+    "win": {
+      "signAndEditExecutable": false,
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico",
+      "artifactName": "Codek-Setup-${version}-${arch}.${ext}"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.icns",
+      "category": "public.app-category.developer-tools",
+      "artifactName": "Codek-${version}-${arch}.${ext}",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "entitlements": "assets/entitlements.mac.plist",
+      "entitlementsInherit": "assets/entitlements.mac.plist"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.png",
+      "category": "Development",
+      "artifactName": "Codek-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Codek",
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "installerHeaderIcon": "assets/icon.ico"
+    }
+  }
+}

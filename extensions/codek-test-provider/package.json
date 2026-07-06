@@ -1,0 +1,12 @@
+{
+  "name": "codek-test-provider",
+  "displayName": "Codek Test Provider",
+  "description": "Minimal extension to test provider registration via EH",
+  "version": "1.0.0",
+  "publisher": "codek",
+  "engines": { "vscode": "*" },
+  "main": "extension",
+  "activationEvents": ["onStartupFinished"],
+  "categories": ["Other"],
+  "contributes": {}
+}

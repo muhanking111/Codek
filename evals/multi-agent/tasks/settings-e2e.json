@@ -1,0 +1,12 @@
+{
+  "name": "设置项端到端接入",
+  "visibleMode": "agent",
+  "goal": "接入新的 Codek Settings 字段，更新设置 UI、持久化服务和验证用例",
+  "files": [
+    "frontend/src/components/SettingsPanel.vue",
+    "frontend/src/settings/settingsStore.ts",
+    "desktop/services/settings/index.js"
+  ],
+  "risk": "medium",
+  "expectedStrategy": "multi-agent"
+}

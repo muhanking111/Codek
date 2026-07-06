@@ -1,0 +1,9 @@
+{
+  "name": "质量门失败 fixture",
+  "visibleMode": "agent",
+  "goal": "在临时 fixture 中生成语法错误 patch，验证质量门失败进入报告并要求返工",
+  "files": ["demo.js"],
+  "risk": "medium",
+  "fixtureType": "quality-fail",
+  "expectedStrategy": "single-agent"
+}

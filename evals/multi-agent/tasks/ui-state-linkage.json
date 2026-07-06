@@ -1,0 +1,8 @@
+{
+  "name": "UI 组件与状态联动",
+  "visibleMode": "agent",
+  "goal": "优化一个 Vue 组件和状态管理联动，只涉及 frontend/src/components/AgentOrchestratorPanel.vue",
+  "files": ["frontend/src/components/AgentOrchestratorPanel.vue"],
+  "risk": "safe",
+  "expectedStrategy": "single-agent"
+}

@@ -1,0 +1,86 @@
+{
+  "reportKind": "codek-extension-host-external-modules",
+  "generatedAt": "1970-01-01T00:00:00.000Z",
+  "policy": "VS Code src/vs files are bundled; Node builtins and bare package imports are externalized and resolved from the extension-host bundle node_modules at runtime.",
+  "nodeBuiltins": [
+    "assert",
+    "child_process",
+    "crypto",
+    "fs",
+    "fs/promises",
+    "http",
+    "https",
+    "net",
+    "node:module",
+    "os",
+    "stream",
+    "string_decoder",
+    "url",
+    "util",
+    "zlib"
+  ],
+  "packages": [
+    {
+      "package": "@vscode/proxy-agent",
+      "specifiers": [
+        "@vscode/proxy-agent"
+      ],
+      "presentInBundleNodeModules": true
+    },
+    {
+      "package": "@vscode/spdlog",
+      "specifiers": [
+        "@vscode/spdlog"
+      ],
+      "presentInBundleNodeModules": true
+    },
+    {
+      "package": "@vscode/windows-process-tree",
+      "specifiers": [
+        "@vscode/windows-process-tree"
+      ],
+      "presentInBundleNodeModules": true
+    },
+    {
+      "package": "http-proxy-agent",
+      "specifiers": [
+        "http-proxy-agent"
+      ],
+      "presentInBundleNodeModules": true
+    },
+    {
+      "package": "https-proxy-agent",
+      "specifiers": [
+        "https-proxy-agent"
+      ],
+      "presentInBundleNodeModules": true
+    },
+    {
+      "package": "kerberos",
+      "specifiers": [
+        "kerberos"
+      ],
+      "presentInBundleNodeModules": true
+    },
+    {
+      "package": "minimist",
+      "specifiers": [
+        "minimist"
+      ],
+      "presentInBundleNodeModules": true
+    },
+    {
+      "package": "undici",
+      "specifiers": [
+        "undici"
+      ],
+      "presentInBundleNodeModules": true
+    }
+  ],
+  "summary": {
+    "externalSpecifiers": 23,
+    "nodeBuiltins": 15,
+    "packages": 8,
+    "packagesPresentInBundleNodeModules": 8
+  }
+}

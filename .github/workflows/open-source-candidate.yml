@@ -1,0 +1,90 @@
+name: Open Source Candidate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - codek/main
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  source-matrix:
+    name: Source Matrix (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - windows-latest
+          - macos-latest
+          - ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Install root dependencies
+        run: npm install --ignore-scripts
+
+      - name: Install frontend dependencies
+        run: npm ci
+        working-directory: frontend/vite-project
+
+      - name: Install desktop dependencies
+        run: npm ci
+        working-directory: desktop
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
+
+      - name: Source doctor
+        run: npm run doctor -- --clean-clone --no-write
+
+  windows-open-source-gate:
+    name: Windows Open Source Gate
+    runs-on: windows-latest
+    timeout-minutes: 60
+    needs: source-matrix
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Install root dependencies
+        run: npm install --ignore-scripts
+
+      - name: Install frontend dependencies
+        run: npm ci
+        working-directory: frontend/vite-project
+
+      - name: Install desktop dependencies
+        run: npm ci
+        working-directory: desktop
+
+      - name: Open source readiness
+        run: npm run ba:open-source-readiness -- --no-write
+
+      - name: Cross-platform package plan
+        run: npm run ba:cross-platform-package-plan -- --no-write
+
+      - name: Open source candidate unit tests
+        run: node --test scripts/open-source-readiness.test.js scripts/cross-platform-package-plan.test.js scripts/beta-trial-plan.test.js scripts/open-source-candidate-gate.test.js
+
+      - name: Release gate quick build
+        run: npm run release:gate -- --include-build --no-write

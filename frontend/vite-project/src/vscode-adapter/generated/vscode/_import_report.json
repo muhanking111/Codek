@@ -1,0 +1,1634 @@
+{
+  "reportKind": "vscode-dependency-closure-import",
+  "ready": true,
+  "mode": "import-closure",
+  "rewrite": "relative",
+  "dryRun": false,
+  "sourceRoot": "vendor/vscode",
+  "outRoot": "frontend/vite-project/src/vscode-adapter/generated/vscode",
+  "entrypoints": [
+    "src/vs/base/common/lifecycle.ts",
+    "src/vs/base/common/uri.ts"
+  ],
+  "summary": {
+    "entrypoints": 2,
+    "missingEntrypoints": 0,
+    "copiedFiles": 68,
+    "edges": 266,
+    "missingShims": 1
+  },
+  "missingEntrypoints": [],
+  "copiedFiles": [
+    {
+      "source": "src/vs/base/common/arrays.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/arrays.ts"
+    },
+    {
+      "source": "src/vs/base/common/arraysFind.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/arraysFind.ts"
+    },
+    {
+      "source": "src/vs/base/common/assert.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/assert.ts"
+    },
+    {
+      "source": "src/vs/base/common/async.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/async.ts"
+    },
+    {
+      "source": "src/vs/base/common/cache.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/cache.ts"
+    },
+    {
+      "source": "src/vs/base/common/cancellation.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/cancellation.ts"
+    },
+    {
+      "source": "src/vs/base/common/charCode.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/charCode.ts"
+    },
+    {
+      "source": "src/vs/base/common/collections.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/collections.ts"
+    },
+    {
+      "source": "src/vs/base/common/equals.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/equals.ts"
+    },
+    {
+      "source": "src/vs/base/common/errors.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/errors.ts"
+    },
+    {
+      "source": "src/vs/base/common/event.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/event.ts"
+    },
+    {
+      "source": "src/vs/base/common/extpath.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/extpath.ts"
+    },
+    {
+      "source": "src/vs/base/common/functional.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/functional.ts"
+    },
+    {
+      "source": "src/vs/base/common/iterator.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/iterator.ts"
+    },
+    {
+      "source": "src/vs/base/common/lazy.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/lazy.ts"
+    },
+    {
+      "source": "src/vs/base/common/lifecycle.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/lifecycle.ts"
+    },
+    {
+      "source": "src/vs/base/common/linkedList.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/linkedList.ts"
+    },
+    {
+      "source": "src/vs/base/common/map.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/map.ts"
+    },
+    {
+      "source": "src/vs/base/common/marshallingIds.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/marshallingIds.ts"
+    },
+    {
+      "source": "src/vs/base/common/network.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/network.ts"
+    },
+    {
+      "source": "src/vs/base/common/observable.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observable.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/base.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/changeTracker.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/changeTracker.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/commonFacade/cancellation.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/commonFacade/cancellation.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/commonFacade/deps.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/debugLocation.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/debugName.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/experimental/utils.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/experimental/utils.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/index.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/index.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/logging/consoleObservableLogger.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/logging/consoleObservableLogger.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/logging/debugGetDependencyGraph.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/logging/debugGetDependencyGraph.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/logging/debugger/debuggerRpc.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/logging/debugger/debuggerRpc.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/logging/debugger/rpc.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/logging/debugger/rpc.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/logging/debugger/utils.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/logging/debugger/utils.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/logging/logging.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/logging/logging.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/map.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/map.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/observables/baseObservable.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/observables/baseObservable.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/observables/constObservable.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/observables/constObservable.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/observables/derived.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/observables/derived.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/observables/derivedImpl.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/observables/derivedImpl.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/observables/lazyObservableValue.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/observables/lazyObservableValue.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/observables/observableFromEvent.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/observables/observableSignal.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/observables/observableSignal.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/observables/observableSignalFromEvent.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/observables/observableSignalFromEvent.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/observables/observableValue.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/observables/observableValue.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/observables/observableValueOpts.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/observables/observableValueOpts.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/reactions/autorun.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/reactions/autorun.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/reactions/autorunImpl.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/reactions/autorunImpl.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/set.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/set.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/transaction.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/transaction.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/utils/promise.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/utils/promise.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/utils/runOnChange.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/utils/runOnChange.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/utils/utils.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/utils/utils.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/utils/utilsCancellation.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/utils/utilsCancellation.ts"
+    },
+    {
+      "source": "src/vs/base/common/observableInternal/utils/valueWithChangeEvent.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/observableInternal/utils/valueWithChangeEvent.ts"
+    },
+    {
+      "source": "src/vs/base/common/path.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/path.ts"
+    },
+    {
+      "source": "src/vs/base/common/platform.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/platform.ts"
+    },
+    {
+      "source": "src/vs/base/common/process.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/process.ts"
+    },
+    {
+      "source": "src/vs/base/common/resources.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/resources.ts"
+    },
+    {
+      "source": "src/vs/base/common/sequence.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/sequence.ts"
+    },
+    {
+      "source": "src/vs/base/common/stopwatch.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/stopwatch.ts"
+    },
+    {
+      "source": "src/vs/base/common/strings.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/strings.ts"
+    },
+    {
+      "source": "src/vs/base/common/symbols.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/symbols.ts"
+    },
+    {
+      "source": "src/vs/base/common/types.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/types.ts"
+    },
+    {
+      "source": "src/vs/base/common/uint.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/uint.ts"
+    },
+    {
+      "source": "src/vs/base/common/uri.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/base/common/uri.ts"
+    },
+    {
+      "source": "src/vs/nls.ts",
+      "destination": "frontend/vite-project/src/vscode-adapter/generated/vscode/src/vs/nls.ts"
+    }
+  ],
+  "missingShims": [
+    {
+      "importer": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "./debuggerApi.js",
+      "reason": "unresolved-relative"
+    }
+  ],
+  "edges": [
+    {
+      "from": "src/vs/base/common/lifecycle.ts",
+      "specifier": "./arrays.js",
+      "to": "src/vs/base/common/arrays.ts"
+    },
+    {
+      "from": "src/vs/base/common/lifecycle.ts",
+      "specifier": "./collections.js",
+      "to": "src/vs/base/common/collections.ts"
+    },
+    {
+      "from": "src/vs/base/common/lifecycle.ts",
+      "specifier": "./map.js",
+      "to": "src/vs/base/common/map.ts"
+    },
+    {
+      "from": "src/vs/base/common/lifecycle.ts",
+      "specifier": "./uri.js",
+      "to": "src/vs/base/common/uri.ts"
+    },
+    {
+      "from": "src/vs/base/common/lifecycle.ts",
+      "specifier": "./functional.js",
+      "to": "src/vs/base/common/functional.ts"
+    },
+    {
+      "from": "src/vs/base/common/lifecycle.ts",
+      "specifier": "./iterator.js",
+      "to": "src/vs/base/common/iterator.ts"
+    },
+    {
+      "from": "src/vs/base/common/lifecycle.ts",
+      "specifier": "./errors.js",
+      "to": "src/vs/base/common/errors.ts"
+    },
+    {
+      "from": "src/vs/base/common/uri.ts",
+      "specifier": "./charCode.js",
+      "to": "src/vs/base/common/charCode.ts"
+    },
+    {
+      "from": "src/vs/base/common/uri.ts",
+      "specifier": "./marshallingIds.js",
+      "to": "src/vs/base/common/marshallingIds.ts"
+    },
+    {
+      "from": "src/vs/base/common/uri.ts",
+      "specifier": "./path.js",
+      "to": "src/vs/base/common/path.ts"
+    },
+    {
+      "from": "src/vs/base/common/uri.ts",
+      "specifier": "./platform.js",
+      "to": "src/vs/base/common/platform.ts"
+    },
+    {
+      "from": "src/vs/base/common/arrays.ts",
+      "specifier": "./arraysFind.js",
+      "to": "src/vs/base/common/arraysFind.ts"
+    },
+    {
+      "from": "src/vs/base/common/arrays.ts",
+      "specifier": "./cancellation.js",
+      "to": "src/vs/base/common/cancellation.ts"
+    },
+    {
+      "from": "src/vs/base/common/arrays.ts",
+      "specifier": "./errors.js",
+      "to": "src/vs/base/common/errors.ts"
+    },
+    {
+      "from": "src/vs/base/common/arrays.ts",
+      "specifier": "./sequence.js",
+      "to": "src/vs/base/common/sequence.ts"
+    },
+    {
+      "from": "src/vs/base/common/map.ts",
+      "specifier": "./uri.js",
+      "to": "src/vs/base/common/uri.ts"
+    },
+    {
+      "from": "src/vs/base/common/iterator.ts",
+      "specifier": "./types.js",
+      "to": "src/vs/base/common/types.ts"
+    },
+    {
+      "from": "src/vs/base/common/path.ts",
+      "specifier": "./process.js",
+      "to": "src/vs/base/common/process.ts"
+    },
+    {
+      "from": "src/vs/base/common/platform.ts",
+      "specifier": "../../nls.js",
+      "to": "src/vs/nls.ts"
+    },
+    {
+      "from": "src/vs/base/common/arraysFind.ts",
+      "specifier": "./arrays.js",
+      "to": "src/vs/base/common/arrays.ts"
+    },
+    {
+      "from": "src/vs/base/common/cancellation.ts",
+      "specifier": "./event.js",
+      "to": "src/vs/base/common/event.ts"
+    },
+    {
+      "from": "src/vs/base/common/cancellation.ts",
+      "specifier": "./lifecycle.js",
+      "to": "src/vs/base/common/lifecycle.ts"
+    },
+    {
+      "from": "src/vs/base/common/sequence.ts",
+      "specifier": "./event.js",
+      "to": "src/vs/base/common/event.ts"
+    },
+    {
+      "from": "src/vs/base/common/types.ts",
+      "specifier": "./assert.js",
+      "to": "src/vs/base/common/assert.ts"
+    },
+    {
+      "from": "src/vs/base/common/process.ts",
+      "specifier": "./platform.js",
+      "to": "src/vs/base/common/platform.ts"
+    },
+    {
+      "from": "src/vs/base/common/event.ts",
+      "specifier": "./async.js",
+      "to": "src/vs/base/common/async.ts"
+    },
+    {
+      "from": "src/vs/base/common/event.ts",
+      "specifier": "./cancellation.js",
+      "to": "src/vs/base/common/cancellation.ts"
+    },
+    {
+      "from": "src/vs/base/common/event.ts",
+      "specifier": "./collections.js",
+      "to": "src/vs/base/common/collections.ts"
+    },
+    {
+      "from": "src/vs/base/common/event.ts",
+      "specifier": "./errors.js",
+      "to": "src/vs/base/common/errors.ts"
+    },
+    {
+      "from": "src/vs/base/common/event.ts",
+      "specifier": "./functional.js",
+      "to": "src/vs/base/common/functional.ts"
+    },
+    {
+      "from": "src/vs/base/common/event.ts",
+      "specifier": "./lifecycle.js",
+      "to": "src/vs/base/common/lifecycle.ts"
+    },
+    {
+      "from": "src/vs/base/common/event.ts",
+      "specifier": "./linkedList.js",
+      "to": "src/vs/base/common/linkedList.ts"
+    },
+    {
+      "from": "src/vs/base/common/event.ts",
+      "specifier": "./observable.js",
+      "to": "src/vs/base/common/observable.ts"
+    },
+    {
+      "from": "src/vs/base/common/event.ts",
+      "specifier": "./process.js",
+      "to": "src/vs/base/common/process.ts"
+    },
+    {
+      "from": "src/vs/base/common/event.ts",
+      "specifier": "./stopwatch.js",
+      "to": "src/vs/base/common/stopwatch.ts"
+    },
+    {
+      "from": "src/vs/base/common/event.ts",
+      "specifier": "./symbols.js",
+      "to": "src/vs/base/common/symbols.ts"
+    },
+    {
+      "from": "src/vs/base/common/assert.ts",
+      "specifier": "./errors.js",
+      "to": "src/vs/base/common/errors.ts"
+    },
+    {
+      "from": "src/vs/base/common/async.ts",
+      "specifier": "./cancellation.js",
+      "to": "src/vs/base/common/cancellation.ts"
+    },
+    {
+      "from": "src/vs/base/common/async.ts",
+      "specifier": "./errors.js",
+      "to": "src/vs/base/common/errors.ts"
+    },
+    {
+      "from": "src/vs/base/common/async.ts",
+      "specifier": "./event.js",
+      "to": "src/vs/base/common/event.ts"
+    },
+    {
+      "from": "src/vs/base/common/async.ts",
+      "specifier": "./lifecycle.js",
+      "to": "src/vs/base/common/lifecycle.ts"
+    },
+    {
+      "from": "src/vs/base/common/async.ts",
+      "specifier": "./resources.js",
+      "to": "src/vs/base/common/resources.ts"
+    },
+    {
+      "from": "src/vs/base/common/async.ts",
+      "specifier": "./uri.js",
+      "to": "src/vs/base/common/uri.ts"
+    },
+    {
+      "from": "src/vs/base/common/async.ts",
+      "specifier": "./platform.js",
+      "to": "src/vs/base/common/platform.ts"
+    },
+    {
+      "from": "src/vs/base/common/async.ts",
+      "specifier": "./symbols.js",
+      "to": "src/vs/base/common/symbols.ts"
+    },
+    {
+      "from": "src/vs/base/common/async.ts",
+      "specifier": "./lazy.js",
+      "to": "src/vs/base/common/lazy.ts"
+    },
+    {
+      "from": "src/vs/base/common/observable.ts",
+      "specifier": "./observableInternal/index.js",
+      "to": "src/vs/base/common/observableInternal/index.ts"
+    },
+    {
+      "from": "src/vs/base/common/resources.ts",
+      "specifier": "./charCode.js",
+      "to": "src/vs/base/common/charCode.ts"
+    },
+    {
+      "from": "src/vs/base/common/resources.ts",
+      "specifier": "./extpath.js",
+      "to": "src/vs/base/common/extpath.ts"
+    },
+    {
+      "from": "src/vs/base/common/resources.ts",
+      "specifier": "./network.js",
+      "to": "src/vs/base/common/network.ts"
+    },
+    {
+      "from": "src/vs/base/common/resources.ts",
+      "specifier": "./path.js",
+      "to": "src/vs/base/common/path.ts"
+    },
+    {
+      "from": "src/vs/base/common/resources.ts",
+      "specifier": "./platform.js",
+      "to": "src/vs/base/common/platform.ts"
+    },
+    {
+      "from": "src/vs/base/common/resources.ts",
+      "specifier": "./strings.js",
+      "to": "src/vs/base/common/strings.ts"
+    },
+    {
+      "from": "src/vs/base/common/resources.ts",
+      "specifier": "./uri.js",
+      "to": "src/vs/base/common/uri.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./observables/observableValueOpts.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableValueOpts.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./reactions/autorun.js",
+      "to": "src/vs/base/common/observableInternal/reactions/autorun.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./observables/observableValue.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableValue.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./observables/derived.js",
+      "to": "src/vs/base/common/observableInternal/observables/derived.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./observables/derivedImpl.js",
+      "to": "src/vs/base/common/observableInternal/observables/derivedImpl.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./utils/promise.js",
+      "to": "src/vs/base/common/observableInternal/utils/promise.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./utils/utilsCancellation.js",
+      "to": "src/vs/base/common/observableInternal/utils/utilsCancellation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./utils/utils.js",
+      "to": "src/vs/base/common/observableInternal/utils/utils.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./changeTracker.js",
+      "to": "src/vs/base/common/observableInternal/changeTracker.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./observables/constObservable.js",
+      "to": "src/vs/base/common/observableInternal/observables/constObservable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./observables/observableSignal.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableSignal.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./observables/observableFromEvent.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./observables/observableSignalFromEvent.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableSignalFromEvent.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./transaction.js",
+      "to": "src/vs/base/common/observableInternal/transaction.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./utils/valueWithChangeEvent.js",
+      "to": "src/vs/base/common/observableInternal/utils/valueWithChangeEvent.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./utils/runOnChange.js",
+      "to": "src/vs/base/common/observableInternal/utils/runOnChange.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./experimental/utils.js",
+      "to": "src/vs/base/common/observableInternal/experimental/utils.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./observables/observableFromEvent.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./observables/observableValue.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableValue.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./set.js",
+      "to": "src/vs/base/common/observableInternal/set.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./map.js",
+      "to": "src/vs/base/common/observableInternal/map.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./logging/logging.js",
+      "to": "src/vs/base/common/observableInternal/logging/logging.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./logging/consoleObservableLogger.js",
+      "to": "src/vs/base/common/observableInternal/logging/consoleObservableLogger.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./logging/debugger/devToolsLogger.js",
+      "to": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "../process.js",
+      "to": "src/vs/base/common/process.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./observables/baseObservable.js",
+      "to": "src/vs/base/common/observableInternal/observables/baseObservable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/index.ts",
+      "specifier": "./logging/debugGetDependencyGraph.js",
+      "to": "src/vs/base/common/observableInternal/logging/debugGetDependencyGraph.ts"
+    },
+    {
+      "from": "src/vs/base/common/extpath.ts",
+      "specifier": "./charCode.js",
+      "to": "src/vs/base/common/charCode.ts"
+    },
+    {
+      "from": "src/vs/base/common/extpath.ts",
+      "specifier": "./path.js",
+      "to": "src/vs/base/common/path.ts"
+    },
+    {
+      "from": "src/vs/base/common/extpath.ts",
+      "specifier": "./platform.js",
+      "to": "src/vs/base/common/platform.ts"
+    },
+    {
+      "from": "src/vs/base/common/extpath.ts",
+      "specifier": "./strings.js",
+      "to": "src/vs/base/common/strings.ts"
+    },
+    {
+      "from": "src/vs/base/common/extpath.ts",
+      "specifier": "./types.js",
+      "to": "src/vs/base/common/types.ts"
+    },
+    {
+      "from": "src/vs/base/common/network.ts",
+      "specifier": "./errors.js",
+      "to": "src/vs/base/common/errors.ts"
+    },
+    {
+      "from": "src/vs/base/common/network.ts",
+      "specifier": "./platform.js",
+      "to": "src/vs/base/common/platform.ts"
+    },
+    {
+      "from": "src/vs/base/common/network.ts",
+      "specifier": "./strings.js",
+      "to": "src/vs/base/common/strings.ts"
+    },
+    {
+      "from": "src/vs/base/common/network.ts",
+      "specifier": "./uri.js",
+      "to": "src/vs/base/common/uri.ts"
+    },
+    {
+      "from": "src/vs/base/common/network.ts",
+      "specifier": "./path.js",
+      "to": "src/vs/base/common/path.ts"
+    },
+    {
+      "from": "src/vs/base/common/strings.ts",
+      "specifier": "./cache.js",
+      "to": "src/vs/base/common/cache.ts"
+    },
+    {
+      "from": "src/vs/base/common/strings.ts",
+      "specifier": "./charCode.js",
+      "to": "src/vs/base/common/charCode.ts"
+    },
+    {
+      "from": "src/vs/base/common/strings.ts",
+      "specifier": "./lazy.js",
+      "to": "src/vs/base/common/lazy.ts"
+    },
+    {
+      "from": "src/vs/base/common/strings.ts",
+      "specifier": "./uint.js",
+      "to": "src/vs/base/common/uint.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValueOpts.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValueOpts.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValueOpts.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValueOpts.ts",
+      "specifier": "./observableValue.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableValue.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValueOpts.ts",
+      "specifier": "./lazyObservableValue.js",
+      "to": "src/vs/base/common/observableInternal/observables/lazyObservableValue.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValueOpts.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorun.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorun.ts",
+      "specifier": "../changeTracker.js",
+      "to": "src/vs/base/common/observableInternal/changeTracker.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorun.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorun.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorun.ts",
+      "specifier": "./autorunImpl.js",
+      "to": "src/vs/base/common/observableInternal/reactions/autorunImpl.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorun.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorun.ts",
+      "specifier": "../observables/observableValue.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableValue.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorun.ts",
+      "specifier": "../transaction.js",
+      "to": "src/vs/base/common/observableInternal/transaction.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/base.ts",
+      "specifier": "./commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValue.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValue.ts",
+      "specifier": "../transaction.js",
+      "to": "src/vs/base/common/observableInternal/transaction.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValue.ts",
+      "specifier": "./baseObservable.js",
+      "to": "src/vs/base/common/observableInternal/observables/baseObservable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValue.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValue.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValue.ts",
+      "specifier": "../logging/logging.js",
+      "to": "src/vs/base/common/observableInternal/logging/logging.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableValue.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derived.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derived.ts",
+      "specifier": "../changeTracker.js",
+      "to": "src/vs/base/common/observableInternal/changeTracker.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derived.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derived.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derived.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derived.ts",
+      "specifier": "./baseObservable.js",
+      "to": "src/vs/base/common/observableInternal/observables/baseObservable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derived.ts",
+      "specifier": "./derivedImpl.js",
+      "to": "src/vs/base/common/observableInternal/observables/derivedImpl.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derivedImpl.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derivedImpl.ts",
+      "specifier": "./baseObservable.js",
+      "to": "src/vs/base/common/observableInternal/observables/baseObservable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derivedImpl.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derivedImpl.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derivedImpl.ts",
+      "specifier": "../logging/logging.js",
+      "to": "src/vs/base/common/observableInternal/logging/logging.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derivedImpl.ts",
+      "specifier": "../changeTracker.js",
+      "to": "src/vs/base/common/observableInternal/changeTracker.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/derivedImpl.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/promise.ts",
+      "specifier": "../../lifecycle.js",
+      "to": "src/vs/base/common/lifecycle.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/promise.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/promise.ts",
+      "specifier": "../reactions/autorun.js",
+      "to": "src/vs/base/common/observableInternal/reactions/autorun.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/promise.ts",
+      "specifier": "../transaction.js",
+      "to": "src/vs/base/common/observableInternal/transaction.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/promise.ts",
+      "specifier": "../observables/derived.js",
+      "to": "src/vs/base/common/observableInternal/observables/derived.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/promise.ts",
+      "specifier": "../observables/observableValue.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableValue.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utilsCancellation.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utilsCancellation.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utilsCancellation.ts",
+      "specifier": "../commonFacade/cancellation.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/cancellation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utilsCancellation.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utilsCancellation.ts",
+      "specifier": "../reactions/autorun.js",
+      "to": "src/vs/base/common/observableInternal/reactions/autorun.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utilsCancellation.ts",
+      "specifier": "../observables/derivedImpl.js",
+      "to": "src/vs/base/common/observableInternal/observables/derivedImpl.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utilsCancellation.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utils.ts",
+      "specifier": "../reactions/autorun.js",
+      "to": "src/vs/base/common/observableInternal/reactions/autorun.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utils.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utils.ts",
+      "specifier": "../observables/observableValue.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableValue.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utils.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utils.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utils.ts",
+      "specifier": "../observables/derived.js",
+      "to": "src/vs/base/common/observableInternal/observables/derived.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utils.ts",
+      "specifier": "../observables/observableFromEvent.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utils.ts",
+      "specifier": "../observables/observableSignal.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableSignal.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utils.ts",
+      "specifier": "../observables/baseObservable.js",
+      "to": "src/vs/base/common/observableInternal/observables/baseObservable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/utils.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/changeTracker.ts",
+      "specifier": "./commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/changeTracker.ts",
+      "specifier": "./base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/constObservable.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/constObservable.ts",
+      "specifier": "./baseObservable.js",
+      "to": "src/vs/base/common/observableInternal/observables/baseObservable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableSignal.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableSignal.ts",
+      "specifier": "../transaction.js",
+      "to": "src/vs/base/common/observableInternal/transaction.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableSignal.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableSignal.ts",
+      "specifier": "./baseObservable.js",
+      "to": "src/vs/base/common/observableInternal/observables/baseObservable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableSignal.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts",
+      "specifier": "../transaction.js",
+      "to": "src/vs/base/common/observableInternal/transaction.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts",
+      "specifier": "../logging/logging.js",
+      "to": "src/vs/base/common/observableInternal/logging/logging.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts",
+      "specifier": "./baseObservable.js",
+      "to": "src/vs/base/common/observableInternal/observables/baseObservable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableSignalFromEvent.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableSignalFromEvent.ts",
+      "specifier": "../transaction.js",
+      "to": "src/vs/base/common/observableInternal/transaction.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableSignalFromEvent.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableSignalFromEvent.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableSignalFromEvent.ts",
+      "specifier": "./baseObservable.js",
+      "to": "src/vs/base/common/observableInternal/observables/baseObservable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/observableSignalFromEvent.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/transaction.ts",
+      "specifier": "./base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/transaction.ts",
+      "specifier": "./debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/transaction.ts",
+      "specifier": "./logging/logging.js",
+      "to": "src/vs/base/common/observableInternal/logging/logging.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/valueWithChangeEvent.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/valueWithChangeEvent.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/valueWithChangeEvent.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/valueWithChangeEvent.ts",
+      "specifier": "../observables/observableFromEvent.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/runOnChange.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/runOnChange.ts",
+      "specifier": "../commonFacade/cancellation.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/cancellation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/runOnChange.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/utils/runOnChange.ts",
+      "specifier": "../reactions/autorun.js",
+      "to": "src/vs/base/common/observableInternal/reactions/autorun.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/experimental/utils.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/experimental/utils.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/experimental/utils.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/experimental/utils.ts",
+      "specifier": "../observables/observableFromEvent.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/experimental/utils.ts",
+      "specifier": "../reactions/autorun.js",
+      "to": "src/vs/base/common/observableInternal/reactions/autorun.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/experimental/utils.ts",
+      "specifier": "../utils/utils.js",
+      "to": "src/vs/base/common/observableInternal/utils/utils.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/set.ts",
+      "specifier": "../observable.js",
+      "to": "src/vs/base/common/observable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/set.ts",
+      "specifier": "./observables/observableValueOpts.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableValueOpts.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/map.ts",
+      "specifier": "../observable.js",
+      "to": "src/vs/base/common/observable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/map.ts",
+      "specifier": "./observables/observableValueOpts.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableValueOpts.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/logging.ts",
+      "specifier": "../reactions/autorunImpl.js",
+      "to": "src/vs/base/common/observableInternal/reactions/autorunImpl.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/logging.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/logging.ts",
+      "specifier": "../transaction.js",
+      "to": "src/vs/base/common/observableInternal/transaction.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/logging.ts",
+      "specifier": "../observables/derivedImpl.js",
+      "to": "src/vs/base/common/observableInternal/observables/derivedImpl.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/logging.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/consoleObservableLogger.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/consoleObservableLogger.ts",
+      "specifier": "../transaction.js",
+      "to": "src/vs/base/common/observableInternal/transaction.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/consoleObservableLogger.ts",
+      "specifier": "./logging.js",
+      "to": "src/vs/base/common/observableInternal/logging/logging.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/consoleObservableLogger.ts",
+      "specifier": "../observables/observableFromEvent.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/consoleObservableLogger.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/consoleObservableLogger.ts",
+      "specifier": "../observables/derivedImpl.js",
+      "to": "src/vs/base/common/observableInternal/observables/derivedImpl.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/consoleObservableLogger.ts",
+      "specifier": "../reactions/autorunImpl.js",
+      "to": "src/vs/base/common/observableInternal/reactions/autorunImpl.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "../../reactions/autorunImpl.js",
+      "to": "src/vs/base/common/observableInternal/reactions/autorunImpl.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "../../transaction.js",
+      "to": "src/vs/base/common/observableInternal/transaction.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "../logging.js",
+      "to": "src/vs/base/common/observableInternal/logging/logging.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "../consoleObservableLogger.js",
+      "to": "src/vs/base/common/observableInternal/logging/consoleObservableLogger.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "./debuggerApi.js",
+      "to": ""
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "./debuggerRpc.js",
+      "to": "src/vs/base/common/observableInternal/logging/debugger/debuggerRpc.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "./utils.js",
+      "to": "src/vs/base/common/observableInternal/logging/debugger/utils.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "../../../types.js",
+      "to": "src/vs/base/common/types.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "../../observables/observableFromEvent.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "../../../errors.js",
+      "to": "src/vs/base/common/errors.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "../../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "../../observables/baseObservable.js",
+      "to": "src/vs/base/common/observableInternal/observables/baseObservable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "../../observables/derivedImpl.js",
+      "to": "src/vs/base/common/observableInternal/observables/derivedImpl.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "../../observables/observableValue.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableValue.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/devToolsLogger.ts",
+      "specifier": "../../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/baseObservable.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/baseObservable.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/baseObservable.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/baseObservable.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/baseObservable.ts",
+      "specifier": "../logging/debugGetDependencyGraph.js",
+      "to": "src/vs/base/common/observableInternal/logging/debugGetDependencyGraph.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/baseObservable.ts",
+      "specifier": "../logging/logging.js",
+      "to": "src/vs/base/common/observableInternal/logging/logging.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/baseObservable.ts",
+      "specifier": "../utils/utils.js",
+      "to": "src/vs/base/common/observableInternal/utils/utils.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/baseObservable.ts",
+      "specifier": "./derived.js",
+      "to": "src/vs/base/common/observableInternal/observables/derived.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugGetDependencyGraph.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugGetDependencyGraph.ts",
+      "specifier": "../observables/derivedImpl.js",
+      "to": "src/vs/base/common/observableInternal/observables/derivedImpl.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugGetDependencyGraph.ts",
+      "specifier": "../observables/observableFromEvent.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableFromEvent.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugGetDependencyGraph.ts",
+      "specifier": "../observables/observableValue.js",
+      "to": "src/vs/base/common/observableInternal/observables/observableValue.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugGetDependencyGraph.ts",
+      "specifier": "../reactions/autorunImpl.js",
+      "to": "src/vs/base/common/observableInternal/reactions/autorunImpl.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugGetDependencyGraph.ts",
+      "specifier": "./consoleObservableLogger.js",
+      "to": "src/vs/base/common/observableInternal/logging/consoleObservableLogger.ts"
+    },
+    {
+      "from": "src/vs/base/common/cache.ts",
+      "specifier": "./cancellation.js",
+      "to": "src/vs/base/common/cancellation.ts"
+    },
+    {
+      "from": "src/vs/base/common/cache.ts",
+      "specifier": "./lifecycle.js",
+      "to": "src/vs/base/common/lifecycle.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/commonFacade/deps.ts",
+      "specifier": "../../assert.js",
+      "to": "src/vs/base/common/assert.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/commonFacade/deps.ts",
+      "specifier": "../../equals.js",
+      "to": "src/vs/base/common/equals.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/commonFacade/deps.ts",
+      "specifier": "../../errors.js",
+      "to": "src/vs/base/common/errors.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/commonFacade/deps.ts",
+      "specifier": "../../event.js",
+      "to": "src/vs/base/common/event.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/commonFacade/deps.ts",
+      "specifier": "../../lifecycle.js",
+      "to": "src/vs/base/common/lifecycle.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/lazyObservableValue.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/lazyObservableValue.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/lazyObservableValue.ts",
+      "specifier": "../transaction.js",
+      "to": "src/vs/base/common/observableInternal/transaction.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/lazyObservableValue.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/lazyObservableValue.ts",
+      "specifier": "../logging/logging.js",
+      "to": "src/vs/base/common/observableInternal/logging/logging.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/lazyObservableValue.ts",
+      "specifier": "./baseObservable.js",
+      "to": "src/vs/base/common/observableInternal/observables/baseObservable.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/observables/lazyObservableValue.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorunImpl.ts",
+      "specifier": "../base.js",
+      "to": "src/vs/base/common/observableInternal/base.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorunImpl.ts",
+      "specifier": "../debugName.js",
+      "to": "src/vs/base/common/observableInternal/debugName.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorunImpl.ts",
+      "specifier": "../commonFacade/deps.js",
+      "to": "src/vs/base/common/observableInternal/commonFacade/deps.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorunImpl.ts",
+      "specifier": "../logging/logging.js",
+      "to": "src/vs/base/common/observableInternal/logging/logging.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorunImpl.ts",
+      "specifier": "../changeTracker.js",
+      "to": "src/vs/base/common/observableInternal/changeTracker.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/reactions/autorunImpl.ts",
+      "specifier": "../debugLocation.js",
+      "to": "src/vs/base/common/observableInternal/debugLocation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/commonFacade/cancellation.ts",
+      "specifier": "../../errors.js",
+      "to": "src/vs/base/common/errors.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/commonFacade/cancellation.ts",
+      "specifier": "../../cancellation.js",
+      "to": "src/vs/base/common/cancellation.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/debuggerRpc.ts",
+      "specifier": "./rpc.js",
+      "to": "src/vs/base/common/observableInternal/logging/debugger/rpc.ts"
+    },
+    {
+      "from": "src/vs/base/common/observableInternal/logging/debugger/utils.ts",
+      "specifier": "../../../lifecycle.js",
+      "to": "src/vs/base/common/lifecycle.ts"
+    },
+    {
+      "from": "src/vs/base/common/equals.ts",
+      "specifier": "./arrays.js",
+      "to": "src/vs/base/common/arrays.ts"
+    }
+  ]
+}
