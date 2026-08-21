@@ -9,11 +9,13 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-0f766e?style=flat-square"></a>
-  <a href="package.json"><img alt="Electron" src="https://img.shields.io/badge/Electron-35-47848f?style=flat-square&logo=electron&logoColor=white"></a>
-  <a href="frontend/vite-project/package.json"><img alt="Vue" src="https://img.shields.io/badge/Vue-3-42b883?style=flat-square&logo=vuedotjs&logoColor=white"></a>
-  <a href="SECURITY.md"><img alt="Local first" src="https://img.shields.io/badge/local--first-agent_workbench-111827?style=flat-square"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-0f766e?style=for-the-badge"></a>
+  <a href="package.json"><img alt="Electron" src="https://img.shields.io/badge/Electron-35-47848f?style=for-the-badge&logo=electron&logoColor=white"></a>
+  <a href="frontend/vite-project/package.json"><img alt="Vue" src="https://img.shields.io/badge/Vue-3-42b883?style=for-the-badge&logo=vuedotjs&logoColor=white"></a>
+  <a href="SECURITY.md"><img alt="Local first" src="https://img.shields.io/badge/local--first-agent_workbench-111827?style=for-the-badge"></a>
 </p>
+
+> **项目状态**：公开预览版，适合源码审阅和本机试用。发布状态、验证范围和未完成边界以本文档及 `docs/` 中的最新说明为准。
 
 <p align="center">
   <a href="#界面原型">界面原型</a>
